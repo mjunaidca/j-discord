@@ -1,10 +1,11 @@
+import { ModeToggle } from "@/components/mode-toggle";
+import { UserButton } from "@clerk/nextjs";
 
 export default function Home() {
   return (
-    <div className="fkex flex-col">
-      <p className="text-3xl font-bold text-indigo-400">
-        Protected Routes discord clone
-      </p>
+    <div>
+      <UserButton afterSignOutUrl="/" />
+      <ModeToggle />
     </div>
   );
 }
